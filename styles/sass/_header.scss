@@ -1,0 +1,70 @@
+header{
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding-top: 2rem;
+}
+
+.indexHeader {
+    background-image: url(../../assets/header-home.jpg);
+    height: 80vh;
+    position: relative;
+    h1 {
+        width: 40%;
+
+    }
+    .headerBox {
+        position: absolute;
+        left: -25%;
+    }
+}
+
+.contactHeader {
+    background-image: url(../../assets/contact-image.jpg);
+}
+
+.blogHeader {
+    background-image: url(../../assets/blog-image.jpg);
+}
+
+.logoNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li a{
+    margin-left: 2rem;
+    text-decoration: none;
+    font-family: 'lato', sans-serif;
+    color: black;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: border-bottom 0.4s ease;
+}
+
+
+li a:hover{
+    border-bottom: solid 1px #F8Fb05; 
+    // transition: border-bottom 0.4s ease;
+}
+
+.logo {
+    font-family: 'Kumar One', cursive;
+    font-size: 1.8rem;
+    width: 10%;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    font-size: 5rem;
+    font-weight: 100;
+    padding-top: 4rem;
+    text-transform: uppercase;
+}

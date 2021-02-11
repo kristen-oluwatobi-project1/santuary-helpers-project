@@ -1,0 +1,83 @@
+.flexContainer {
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.blogContainer {
+    width: 60%;
+    z-index: 10;
+    position: relative;
+    top: -80px;
+    img {
+        width: 100%;
+    }
+}
+
+.blogMain {
+    background-color: #E0FDDF;
+}
+
+.blogSection {
+    background-color: white;
+    padding: 2rem 2rem 2rem 8rem;
+    margin-left: -15%;
+
+}
+.couchImage {
+    margin-left: -15%;
+}
+
+aside {
+    width: 40%;
+    height: 680px;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-right: -5%;
+    background-color: #F8FB05;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin-top: 10%;
+    }
+    li {
+        margin-left: 1.5rem;
+        line-height: 20px;
+        letter-spacing: 2px;
+        font-family: 'Lato', sans-serif;
+    }
+    .asideContainer {
+        position: relative;
+        top: -20px;
+        right: -15px;
+    }
+    .asideText {
+        width: 90%;
+    }
+}
+
+.comments {
+    h3 {
+    margin-top: 3rem;
+    }
+}
+
+.commentContainer {
+    display: flex;
+    width: 55%;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    img {
+        margin-right: 2rem;
+        height: 100px;
+    }
+}
+
+.flexContainer .yellowBox {
+    height: 100%;
+    position: relative;
+    top: -98%;
+    z-index: -1;
+}

@@ -1,0 +1,485 @@
+/* Mobile Styles */
+/* Fluid width */
+// @media only screen and (max-width: 400px) {
+// }
+
+// TABLET MEDIA QUERIES 
+
+.indexHeader {
+    .headerBox {
+        @include tablet {
+            left: -40%;
+        }
+    } 
+}
+
+.indexSection4 {
+    ul {
+        .textContainer1 {
+            @include tablet {
+                margin-right: 5%;
+            }
+        }
+        .textContainer2 {
+            @include tablet {
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
+.section4List button {
+    @include tablet {
+        padding: 0.8rem 0.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+aside {
+    @include tablet {
+        height: 550px;
+    }
+}
+
+// TABLET MINI MEDIA QUERIES
+
+body {
+    @include tabletMini {
+        overflow-x: hidden;
+    }
+    h2 {
+        @include tabletMini {
+            font-size: 2rem;
+        }
+    }
+}
+
+header {
+    @include tabletMini {
+        height: 35vh;
+    }
+    h1 {
+        @include tabletMini {
+            font-size: 3rem;
+        }
+    }
+    
+}
+
+.indexHeader {
+    @include tabletMini {
+        height: 40vh;
+    }
+    .headerBox {
+        @include tabletMini {
+            display: none;
+        }
+    }
+}
+
+.indexSection1 {
+    @include tabletMini {
+        padding: 0 0 4rem;
+}
+        .flexContainer {
+            @include tabletMini {
+                flex-direction: row;
+            }
+        }
+        .section1Text {
+            @include tabletMini {
+                margin-top: 0;
+                margin-right: 5%;
+        }
+    }
+        button {
+        @include tabletMini {
+            width: 35%;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.smallBox {
+    @include tabletMini {
+        margin-top: 7rem;
+}
+}
+
+
+.section3List li i {
+    @include tabletMini {
+        font-size: 1.5rem;
+    }
+}
+
+.indexSection4 ul {
+    @include tabletMini {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15%;
+        row-gap: 5%;
+        h2 {
+            @include tabletMini {
+                margin-top: 0;
+            }
+        }
+        .img1 {
+            @include tabletMini {
+                top: 0;
+            }
+        }
+        .img2 {
+            @include tabletMini {
+                bottom: -10px;
+            }
+        }
+    }
+}
+
+.indexSection6 button {
+    @include tabletMini {
+        width: 18%;
+        font-size: 0.9rem;
+    }
+}
+
+.flexContainer {
+    @include tabletMini {
+        flex-direction: column;
+    }
+    .blogContainer {
+        @include tabletMini {
+            width: 100%;
+            top: -45px;
+        }
+    }
+}
+
+
+aside {
+    @include tabletMini {
+        height: 55%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .asideContainer {
+        @include tabletMini {
+            margin: 0;
+            top: -20px;
+            right: -15px;
+        }
+        img {
+            @include tabletMini {
+                width: 43%;
+                height: 40vh;
+                position: relative;
+                right: -57%;
+            }
+        }
+    }
+    .asideText {
+        @include tabletMini {
+            width: 50%;
+            margin-top: -45%;
+        }
+    }
+}
+
+.blogContainer {
+    .couchImage {
+        @include tabletMini {
+            margin: 0;
+        }
+    }
+    .blogSection {
+        @include tabletMini {
+            margin-left: 0;
+            padding: 2rem;
+        }
+    }
+}
+
+
+.contactContainer {
+    @include tabletMini {
+        flex-direction: column;
+        text-align: center;
+    }
+    .formContainer {
+        @include tabletMini {
+            width: 100%;
+        }
+        .contactForm {
+            @include tabletMini{
+                top: -40px;
+            }
+        }
+    }
+}
+
+
+.mainGreen {
+    @include tabletMini {
+        // height: 0;
+    }
+    .contactDetails {
+        @include tabletMini {
+            padding: 0;
+        }
+        .icon {
+            @include tabletMini {
+                margin-right: 0;
+            }
+            i {
+                @include tabletMini {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.wrapper .formContainer {
+    @include tabletMini {
+        padding-left: 9%;
+        width: 100%;
+    }
+    .contact {
+        @include tabletMini {
+            width: 100%;
+        }
+    }
+}
+
+.commentContainer {
+    @include tabletMini {
+        width: 85%;
+        margin-bottom: 4rem;
+    }
+}
+
+// MOBILE MAX MEDIA QUERIES
+
+header {
+    h1 {
+        @include mobileMax {
+            font-size: 2.5rem;
+        }
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+
+body {
+        h2 {
+        @include mobileMax {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+li a {
+    @include mobileMax {
+        font-size: 1.4rem;
+    }
+}
+
+.indexSection4 {
+    ul {
+        button {
+            @include mobileMax {
+                width: 33%;
+                margin-left: 65%;
+            }
+        }
+    }
+}
+
+.wrapper .formContainer {
+    @include mobileMax {
+        padding-left: 0;
+    }
+}
+
+// MOBILE MED QUERIES
+
+* {
+    @include mobileMed {
+        font-size: 0.9rem;
+    }
+}
+
+.indexSection1 {
+    .smallBox {
+        @include mobileMed {
+            height: 150px;
+            box-shadow: -10px 10px 0 #F8FB05;
+            margin-top: 26%;
+        }
+    }
+    button {
+        font-size: 0.7rem;
+    }
+}
+
+.section3List {
+    li {
+        i {
+            @include mobileMed {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.indexSection4 {
+    .section4List {
+        .textContainer1,
+        .textContainer2 {
+            button {
+                @include mobileMed {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+.indexSection6 {
+    button {
+        @include mobileMed {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.blogForm {
+    @include mobileMed {
+        padding: 5%;
+    }
+}
+
+.contactDetails {
+    .icon {
+        i {
+            @include mobileMed {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// MOBILE MEDIA QUERIES
+
+header {
+    @include mobile {
+        li {
+            a {
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+.indexSection1 {
+    @include mobile {
+        .flexContainer {
+            flex-direction: column;
+        }
+        .section1Text {
+            width: 100%;
+        }
+        .smallBox {
+            margin-top: 5%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.indexSection3 {
+    @include mobile {
+        .section3List{
+            display: block;
+        }
+    }
+}
+
+.indexSection4 {
+    @include mobile {
+        ul {
+            .img1,
+            .img2 {
+                box-shadow: none;
+            }
+        }
+        .section4List {
+            display: block;
+            .textContainer1 {
+                margin: 12% 0;
+            }
+            .textContainer2 {
+                margin-left: 0;
+                margin-bottom: 10%;
+            }
+            .textContainer1,
+            .textContainer2 {
+                text-align: center;
+                button {
+                    display: inline;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.indexSection6 {
+    @include mobile {
+        button {
+            width: 33%;
+        }
+    }
+}
+
+aside {
+    @include mobile {
+        .asideContainer {
+            top: 0;
+            right: 0;
+            img {
+                width: 100%;
+                right: 0;
+                padding: 6%;
+            }
+        }
+        .asideText {
+            margin-top: 0;
+            width: 100%;
+            padding: 0 2%;
+            text-align: center;
+        }
+        .recentPosts {
+            margin-left: 25%;
+            padding-bottom: 5%;
+        }
+    }
+}
+
+.inputContainer {
+    @include mobile {
+        display: block;
+        input {
+            width: 100%;
+            padding-bottom: 1.2rem;
+            padding-left: 1rem;
+            margin-bottom: 6%;
+        }
+    }
+}
