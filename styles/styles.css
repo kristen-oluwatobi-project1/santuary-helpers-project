@@ -497,6 +497,10 @@ h1 {
   width: 100%;
 }
 
+.blogContainer p em {
+  font-weight: 900;
+}
+
 .blogMain {
   background-color: #E0FDDF;
 }
@@ -701,6 +705,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .mainGreen {
+    height: 65vh;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -761,7 +771,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .indexSection1 button {
-    width: 35%;
+    width: 40%;
     font-size: 0.9rem;
   }
 }
@@ -930,6 +940,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .wrapper .formContainer .yellowBox {
+    right: -60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .commentContainer {
     width: 85%;
     margin-bottom: 4rem;
@@ -987,7 +1003,7 @@ header .logo {
 }
 
 .indexSection1 button {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -999,13 +1015,13 @@ header .logo {
 @media only screen and (max-width: 450px) {
   .indexSection4 .section4List .textContainer1 button,
   .indexSection4 .section4List .textContainer2 button {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .indexSection6 button {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1021,19 +1037,22 @@ header .logo {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   header li a {
     font-size: 1rem;
     margin-left: 1rem;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .indexSection1 .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .indexSection1 .flexContainer button {
+    width: 33%;
   }
   .indexSection1 .section1Text {
     width: 100%;
@@ -1081,13 +1100,13 @@ header .logo {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .indexSection6 button {
     width: 33%;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   aside .asideContainer {
     top: 0;
     right: 0;
@@ -1109,7 +1128,7 @@ header .logo {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .inputContainer {
     display: block;
   }
@@ -1172,7 +1191,7 @@ h4 {
 
 .mainGreen {
   background-color: #E0FDDF;
-  height: 48vh;
+  height: 60vh;
 }
 
 .contactForm {
@@ -1219,11 +1238,13 @@ h4 {
 
 .contactDetails .email {
   margin: 1.7rem 0;
+  font-size: 1.5rem;
 }
 
 .contactDetails a {
   display: block;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .icon {

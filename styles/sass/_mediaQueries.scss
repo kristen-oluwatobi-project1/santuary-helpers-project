@@ -41,6 +41,12 @@ aside {
     }
 }
 
+.mainGreen {
+    @include tablet {
+        height: 65vh;
+    }
+}
+
 // TABLET MINI MEDIA QUERIES
 
 body {
@@ -94,7 +100,7 @@ header {
     }
         button {
         @include tabletMini {
-            width: 35%;
+            width: 40%;
             font-size: 0.9rem;
         }
     }
@@ -222,7 +228,6 @@ aside {
 
 .mainGreen {
     @include tabletMini {
-        // height: 0;
     }
     .contactDetails {
         @include tabletMini {
@@ -251,6 +256,11 @@ aside {
             width: 100%;
         }
     }
+    .yellowBox {
+        @include tabletMini {
+            right: -60px;
+        }
+    }
 }
 
 .commentContainer {
@@ -259,6 +269,8 @@ aside {
         margin-bottom: 4rem;
     }
 }
+
+
 
 // MOBILE MAX MEDIA QUERIES
 
@@ -304,6 +316,8 @@ li a {
     }
 }
 
+
+
 // MOBILE MED QUERIES
 
 * {
@@ -321,7 +335,7 @@ li a {
         }
     }
     button {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -341,7 +355,7 @@ li a {
         .textContainer2 {
             button {
                 @include mobileMed {
-                    font-size: 0.7rem;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -351,7 +365,7 @@ li a {
 .indexSection6 {
     button {
         @include mobileMed {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
     }
 }
@@ -372,6 +386,7 @@ li a {
     }
 }
 
+
 // MOBILE MEDIA QUERIES
 
 header {
@@ -389,6 +404,9 @@ header {
     @include mobile {
         .flexContainer {
             flex-direction: column;
+            button {
+                width: 33%;
+            }
         }
         .section1Text {
             width: 100%;
