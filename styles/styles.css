@@ -252,7 +252,7 @@ header {
 }
 
 .indexHeader {
-  background-image: url(../../assets/header-home.jpg);
+  background-image: url(../assets/header-home.jpg);
   height: 80vh;
   position: relative;
 }
@@ -267,11 +267,11 @@ header {
 }
 
 .contactHeader {
-  background-image: url(../../assets/contact-image.jpg);
+  background-image: url(../assets/contact-image.jpg);
 }
 
 .blogHeader {
-  background-image: url(../../assets/blog-image.jpg);
+  background-image: url(../assets/blog-image.jpg);
 }
 
 .logoNav {
@@ -1048,13 +1048,13 @@ header .logo {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 540px) {
   .indexSection3 .section3List {
     display: block;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 540px) {
   .indexSection4 ul .img1,
   .indexSection4 ul .img2 {
     -webkit-box-shadow: none;
@@ -1172,6 +1172,7 @@ h4 {
 
 .mainGreen {
   background-color: #E0FDDF;
+  height: 48vh;
 }
 
 .contactForm {
