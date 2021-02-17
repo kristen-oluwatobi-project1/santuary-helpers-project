@@ -45,8 +45,16 @@ li a{
     font-size: 1.8rem;
     text-transform: uppercase;
     transition: border-bottom 0.4s ease;
+    cursor: pointer;
 }
 
+.hamburgerIcon {
+    display: none;
+}
+
+.closeMenu {
+    display: none;
+}
 
 li a:hover{
     border-bottom: solid 1px #F8Fb05; 

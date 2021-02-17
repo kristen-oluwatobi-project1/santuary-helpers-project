@@ -3,7 +3,13 @@
 // @media only screen and (max-width: 400px) {
 // }
 
-// TABLET MEDIA QUERIES 
+// TABLET MEDIA QUERIES
+
+body {
+    @include tablet {
+        overflow-x: hidden;
+    }
+}
 
 .indexHeader {
     .headerBox {
@@ -12,6 +18,50 @@
         }
     } 
 }
+
+.navigation {
+    @include tablet {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        background-color: #065635;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        z-index: 1000;
+        transform: translateX(100%);
+    }
+}
+
+
+.showHamMenu {
+    @include tablet {
+        transform: translateX(0%);        
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        height: 100vh;
+        background-color: #065635;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.75s ease-in;
+    }
+}
+
+.hamburgerIcon {
+    @include tablet {
+        display: block;
+        font-size: 2rem;
+    }
+}
+
 
 .indexSection4 {
     ul {
@@ -37,7 +87,7 @@
 
 aside {
     @include tablet {
-        height: 550px;
+        height: 710px;
     }
 }
 
@@ -335,7 +385,7 @@ li a {
         }
     }
     button {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
@@ -355,7 +405,7 @@ li a {
         .textContainer2 {
             button {
                 @include mobileMed {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -365,7 +415,7 @@ li a {
 .indexSection6 {
     button {
         @include mobileMed {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 }
@@ -449,7 +499,7 @@ header {
             .textContainer1,
             .textContainer2 {
                 text-align: center;
-                button {
+                a {
                     display: inline;
                     margin: 0;
                 }
@@ -460,7 +510,7 @@ header {
 
 .indexSection6 {
     @include mobile {
-        button {
+        a {
             width: 33%;
         }
     }
